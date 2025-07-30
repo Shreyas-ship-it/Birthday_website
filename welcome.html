@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Welcome to Your Birthday Website</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .container {
+      text-align: center;
+      animation: slideDown 1s ease-out;
+    }
+
+    h1 {
+      font-size: 40px;
+      color: #d6336c;
+    }
+
+    p {
+      font-size: 20px;
+      color: #4e342e;
+      margin-bottom: 30px;
+    }
+
+    .btn-start {
+      padding: 14px 28px;
+      font-size: 18px;
+      background-color: #ff6b81;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .btn-start:hover {
+      background-color: #ff4757;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎉 Welcome, My Special One 🎉</h1>
+    <p>This website is made just for you... Let’s begin the magic! ✨</p>
+    <a href="index.html"><button class="btn-start">Start the Surprise 🎁</button></a>
+  </div>
+</body>
+</html>
